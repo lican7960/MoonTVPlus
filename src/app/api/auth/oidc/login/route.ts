@@ -4,6 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getConfig } from '@/lib/config';
 
 export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';   // ← 新增，禁止构建期静态预渲染
 
 export async function GET(request: NextRequest) {
   try {
