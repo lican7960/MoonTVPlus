@@ -11,6 +11,8 @@ import {
 } from '@/lib/refresh-token';
 
 export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';   // ← 新增，禁止构建期静态预渲染
+
 
 // 生成签名
 async function generateSignature(
